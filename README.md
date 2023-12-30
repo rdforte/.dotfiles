@@ -16,5 +16,7 @@ Aborting
 ```
 Remove or backup any collisions and repeat the checkout.
 
+[original dotifles medium article](https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280049)
+
 ## NVIM
 [nvim setup/getting started](./.config/nvim/README.md)
