@@ -18,5 +18,16 @@ Remove or backup any collisions and repeat the checkout.
 
 [original dotifles medium article](https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280049)
 
+## Fonts
+install [NerdFonts](https://github.com/ryanoasis/nerd-fonts) with homebrew
+```
+brew tap homebrew/cask-fonts
+brew search fonts | grep -i jetbrains
+brew install --cask font-jetbrains-mono-nerd-font
+```
+
 ## NVIM
 [nvim setup/getting started](./.config/nvim/README.md)
+
+## TMUX
+install [tpm tmux plugin manager](https://github.com/tmux-plugins/tpm)
