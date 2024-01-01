@@ -47,4 +47,4 @@ install [pyenv](https://github.com/pyenv/pyenv)
 
   ```
   npm i -g neovim
-  ```
+ ```
