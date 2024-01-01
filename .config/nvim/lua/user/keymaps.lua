@@ -70,4 +70,4 @@ keymap.set("n", "<leader>di", "<cmd>DapStepInto<CR>")                        -- 
 keymap.set("n", "<leader>do", "<cmd>DapStepOut<CR>")                         -- debug out
 keymap.set("n", "<leader>dn", "<cmd>DapStepOver<CR>")                        -- debug next
 keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>")                       -- debug terminate
-keymap.set("n", "<leader>di", "<cmd>lua require('dap-go').debug_test()<CR>") -- debug individual test closest to cursor. uses dap-go
+keymap.set("n", "<leader>dg", "<cmd>lua require('dap-go').debug_test()<CR>") -- debug individual test closest to cursor. uses dap-go
