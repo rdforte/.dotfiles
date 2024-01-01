@@ -63,6 +63,10 @@ return {
           },
           { "encoding" },
           { "fileformat" },
+          {
+            'filename',
+            path = 1,
+          },
           { "filetype" },
         },
       },
