@@ -30,6 +30,6 @@ brew install --cask font-jetbrains-mono-nerd-font
 [nvim setup/getting started](./.config/nvim/README.md)
 
 ## TMUX
-install [tpm tmux plugin manager](https://github.com/tmux-plugins/tpm)
+install [tmux](https://formulae.brew.sh/formula/tmux)
 
 To resize panes in tmux you will need to run your prefix key `control p` followed by `command <arrow key>`
