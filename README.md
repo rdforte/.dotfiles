@@ -22,7 +22,6 @@ Remove or backup any collisions and repeat the checkout.
 install [NerdFonts](https://github.com/ryanoasis/nerd-fonts) with homebrew
 ```
 brew tap homebrew/cask-fonts
-brew search fonts | grep -i jetbrains
 brew install --cask font-jetbrains-mono-nerd-font
 ```
 
