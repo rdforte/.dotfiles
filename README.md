@@ -31,4 +31,5 @@ brew install --cask font-jetbrains-mono-nerd-font
 
 ## TMUX
 install [tpm tmux plugin manager](https://github.com/tmux-plugins/tpm)
+
 To resize panes in tmux you will need to run your prefix key `control p` followed by `command <arrow key>`
