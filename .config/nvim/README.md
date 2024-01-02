@@ -45,6 +45,13 @@ install [pyenv](https://github.com/pyenv/pyenv)
 
 - Neovim node support
 
-  ```
+```
   npm i -g neovim
- ```
+```
+
+## Common Issues
+
+#### Debug breakpoint shows letter R
+This usually means that the path to the current directory is incorrect ie `develper/competitive-programming` instead of `Developer/competitive-programming`.
+In this instance the case is important.
+
