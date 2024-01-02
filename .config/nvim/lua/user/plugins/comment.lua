@@ -2,6 +2,24 @@ return {
   'numToStr/Comment.nvim',
   lazy = false,
   config = function()
-    require('Comment').setup()
+    require('Comment').setup({
+      toggler = {
+        ---Line-comment toggle keymap
+        line = 'cl',
+      },
+      ---LHS of operator-pending mappings in NORMAL and VISUAL mode
+      opleader = {
+        ---Line-comment keymap
+        line = 'cl',
+      },
+      ---Enable keybindings
+      ---NOTE: If given `false` then the plugin won't create any mappings
+      mappings = {
+        ---Operator-pending mapping; `gcc` `gbc` `gc[count]{motion}` `gb[count]{motion}`
+        basic = true,
+        ---Extra mapping; `gco`, `gcO`, `gcA`
+        extra = false,
+      },
+    })
   end,
 }
