@@ -1,6 +1,7 @@
 # Dotfiles
 
 ## Getting Started
+Follow the below setup. This will enable us to easily manage our dotfiles using git. For example once setup we can run git commands as such `dotfiles status`, `dotfiles add <file>`, `dotfiles commit`.
 ```
 ❯ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ❯ git clone --bare https://github.com/rdforte/.dotfiles $HOME/.dotfiles
@@ -32,3 +33,11 @@ brew install --cask font-jetbrains-mono-nerd-font
 install [tmux](https://formulae.brew.sh/formula/tmux)
 
 To resize panes in tmux you will need to run your prefix key `control p` followed by `command <arrow key>`
+
+## Resolving Merge conflicts
+
+For this we are going to rely on VSCode merge conflict tool. So we will need to install [VSCode Download page](https://code.visualstudio.com/download).
+
+You can also run VS Code from the terminal by typing 'code' after adding it to the path: Launch VS Code. 
+Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+
