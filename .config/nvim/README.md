@@ -38,16 +38,19 @@ First we'll fix copy/paste
 - On mac `pbcopy` should be builtin
 
 
-Next we need to install python support (node is optional)
+Next we need to install the following
 
-- Neovim python support
+__Neovim python support__
+  
 install [pyenv](https://github.com/pyenv/pyenv)
 
-- Neovim node support
+__Neovim Node support__
+  
+install [nvm](https://github.com/nvm-sh/nvm)
 
-```
-  npm i -g neovim
-```
+__Neovim Go support__
+  
+install [gvm](https://github.com/moovweb/gvm)
 
 ## Common Issues
 
