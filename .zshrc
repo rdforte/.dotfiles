@@ -15,7 +15,3 @@ alias nv=nvim
 
 # alias for Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-# shortcuts
-alias s1='shortcuts run "Launch Safari"'
-alias s2='shortcuts run "Launch Slack"'
