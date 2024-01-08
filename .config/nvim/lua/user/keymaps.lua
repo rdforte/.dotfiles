@@ -1,17 +1,3 @@
--- local opts = { noremap = true, silent = true }
-
--- local term_opts = { silent = true }
-
--- Shorten function name
--- local keymap = vim.api.nvim_set_keymap
-
-local keymap = vim.keymap -- for conciseness
-
---Remap space as leader key
-keymap.set("", "<Space>", "<Nop>")
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -19,6 +5,13 @@ vim.g.maplocalleader = " "
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+
+local keymap = vim.keymap -- for conciseness
+
+--Remap space as leader key
+keymap.set("", "<Space>", "<Nop>")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
@@ -71,3 +64,6 @@ keymap.set("n", "<leader>do", "<cmd>DapStepOut<CR>")                         -- 
 keymap.set("n", "<leader>dn", "<cmd>DapStepOver<CR>")                        -- debug next
 keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>")                       -- debug terminate
 keymap.set("n", "<leader>dg", "<cmd>lua require('dap-go').debug_test()<CR>") -- debug individual test closest to cursor. uses dap-go
+
+-- LSP
+-- lsp keymaps are in plugins/lsp/lsp-config.lua

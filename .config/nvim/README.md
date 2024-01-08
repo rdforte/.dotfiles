@@ -52,6 +52,16 @@ __Neovim Go support__
   
 install [gvm](https://github.com/moovweb/gvm)
 
+## Github copilot
+to login to copilot
+```
+:Copilot setup
+```
+for more options
+```
+:copilot help
+```
+
 ## Common Issues
 
 #### Debug breakpoint shows letter R
