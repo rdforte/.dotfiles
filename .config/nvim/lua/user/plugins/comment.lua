@@ -5,12 +5,12 @@ return {
     require('Comment').setup({
       toggler = {
         ---Line-comment toggle keymap
-        line = 'cl',
+        line = 'gc',
       },
       ---LHS of operator-pending mappings in NORMAL and VISUAL mode
       opleader = {
         ---Line-comment keymap
-        line = 'cl',
+        line = 'gc',
       },
       ---Enable keybindings
       ---NOTE: If given `false` then the plugin won't create any mappings
