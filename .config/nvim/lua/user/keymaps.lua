@@ -5,6 +5,8 @@
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+--
+--   NOTE: Keymaps specific to the package will be found in their own file.
 
 local keymap = vim.keymap -- for conciseness
 
@@ -49,21 +51,3 @@ keymap.set("t", "<C-h>", "<C-\\><C-N><C-w>h")
 keymap.set("t", "<C-j>", "<C-\\><C-N><C-w>j")
 keymap.set("t", "<C-k>", "<C-\\><C-N><C-w>k")
 keymap.set("t", "<C-l>", "<C-\\><C-N><C-w>l")
-
--- Telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
-keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-
--- Debugger
-keymap.set("n", "<leader>ds", "<cmd>DapContinue<CR>")                        -- debug start
-keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>")                -- debug breakpoint
-keymap.set("n", "<leader>di", "<cmd>DapStepInto<CR>")                        -- debug into
-keymap.set("n", "<leader>do", "<cmd>DapStepOut<CR>")                         -- debug out
-keymap.set("n", "<leader>dn", "<cmd>DapStepOver<CR>")                        -- debug next
-keymap.set("n", "<leader>dt", "<cmd>DapTerminate<CR>")                       -- debug terminate
-keymap.set("n", "<leader>dg", "<cmd>lua require('dap-go').debug_test()<CR>") -- debug individual test closest to cursor. uses dap-go
-
--- LSP
--- lsp keymaps are in plugins/lsp/lsp-config.lua
