@@ -34,7 +34,6 @@ keymap.set("n", "<S-Right>", ":vertical resize +2<CR>")
 -- Navigate buffers
 keymap.set("n", "<S-l>", ":bnext<CR>")
 keymap.set("n", "<S-h>", ":bprevious<CR>")
-keymap.set("n", "<S-d>", ":bdelete<CR>")
 
 -- Visual --
 -- Stay in indent mode
