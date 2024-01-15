@@ -3,7 +3,7 @@ return {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim", -- used for installing and upgrading 3rd party tools
   },
   config = function()
     -- import mason

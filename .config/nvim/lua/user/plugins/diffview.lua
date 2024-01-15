@@ -4,9 +4,12 @@ return {
     require("diffview").setup({
       view = {
         merge_tool = {
-          layout = "diff3_mixed"
-        }
-      }
+          layout = "diff3_mixed",
+        },
+      },
     })
-  end
+    -- Keymaps
+    vim.keymap.set("n", "<leader>mo", "<cmd>DiffviewOpen<cr>", { desc = "Open diffview" })
+    vim.keymap.set("n", "<leader>mc", "<cmd>DiffviewClose<cr>", { desc = "Close diffview" })
+  end,
 }
