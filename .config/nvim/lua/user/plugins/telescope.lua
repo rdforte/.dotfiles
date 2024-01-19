@@ -12,11 +12,23 @@ return {
 
     telescope.setup({
       defaults = {
+        -- updates ripgrep to enable search of hidden files through --hidden flag
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+          "--hidden",
+          "--unrestricted",
+        },
         path_display = { "truncate " },
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next,     -- move to next result
+            ["<C-j>"] = actions.move_selection_next, -- move to next result
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
         },
