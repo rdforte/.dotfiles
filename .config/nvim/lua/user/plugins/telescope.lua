@@ -12,6 +12,7 @@ return {
 
     telescope.setup({
       defaults = {
+        file_ignore_patterns = { "node_modules", ".git" }, -- ignore these files when searching
         -- updates ripgrep to enable search of hidden files through --hidden flag
         vimgrep_arguments = {
           "rg",
