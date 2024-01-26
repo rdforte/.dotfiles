@@ -1,3 +1,3 @@
-require "user.options"
-require "user.keymaps"
-require "user.lazy-nvim-plugins"
+require("user.options")
+require("user.keymaps")
+require("user.lazy-nvim-plugins")
