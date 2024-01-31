@@ -52,4 +52,4 @@ keymap.set("t", "<C-k>", "<C-\\><C-N><C-w>k")
 keymap.set("t", "<C-l>", "<C-\\><C-N><C-w>l")
 
 -- Double tap escape to exit highlight mode
-keymap.set("n", "<ESC><ESC>", "<cmd>noh<CR>")
+keymap.set("n", "<leader><ESC>", "<cmd>noh<CR>")
