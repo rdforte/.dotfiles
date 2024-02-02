@@ -1,5 +1,5 @@
 parse_git_branch() {
-    local branchName=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/')
+    local branchName=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
     if [ -n "$branchName" ]
     then
       echo "  $branchName"
