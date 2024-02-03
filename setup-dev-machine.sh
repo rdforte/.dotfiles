@@ -2,8 +2,6 @@
 
 set -e
 
-# Homebrew Script for OSX
-
 echo "=> Installing XCode Developer tools..."
 xcode-select --install
 
@@ -40,5 +38,14 @@ brew install delve
 echo "=> Node Developer Tools..."
 echo "NVM"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+echo "=> Installing Postman..."
+brew install --cask postman
+
+echo "=> Installing Docker..."
+brew install docker
+
+echo "=> Installing VSCode..."
+brew install --cask visual-studio-code
 
 echo "FINISHED!"
