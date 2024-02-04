@@ -35,12 +35,6 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 echo "Delve"
 brew install delve
 
-echo "🍺 => Arduino..."
-echo "TinyGo"
-brew tap tinygo-org/tools
-brew install tinygo
-echo "avrdude"
-brew install avrdude
 
 echo "🍺 => Node Developer Tools..."
 echo "NVM"
@@ -54,5 +48,19 @@ brew install docker
 
 echo "🍺 => Installing VSCode..."
 brew install --cask visual-studio-code
+
+# This requires some time to install so keep last and is also quite flaky.
+echo "🍺 => Arduino TinyGo Support..."
+brew tap tinygo-org/tools
+brew install tinygo
+brew tap osx-cross/avr
+brew install avr-gcc
+brew install avrdude
+git clone --recursive https://github.com/tinygo-org/tinygo.git
+cd tinygo
+git checkout dev
+git submodule update --init
+brew install llvm
+go install
 
 echo "FINISHED!"
