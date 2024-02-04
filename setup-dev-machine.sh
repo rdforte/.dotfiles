@@ -50,17 +50,17 @@ echo "🍺 => Installing VSCode..."
 brew install --cask visual-studio-code
 
 # This requires some time to install so keep last and is also quite flaky.
-echo "🍺 => Arduino TinyGo Support..."
-brew tap tinygo-org/tools
-brew install tinygo
-brew tap osx-cross/avr
-brew install avr-gcc
-brew install avrdude
-git clone --recursive https://github.com/tinygo-org/tinygo.git
-cd tinygo
-git checkout dev
-git submodule update --init
-brew install llvm
-go install
+# echo "🍺 => Arduino TinyGo Support..."
+# brew tap tinygo-org/tools
+# brew install tinygo
+# brew tap osx-cross/avr
+# brew install avr-gcc
+# brew install avrdude
+# git clone --recursive https://github.com/tinygo-org/tinygo.git
+# cd tinygo
+# git checkout dev
+# git submodule update --init
+# brew install llvm
+# go install
 
 echo "FINISHED!"
