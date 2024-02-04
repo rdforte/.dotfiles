@@ -42,10 +42,9 @@ brew install docker
 echo "🍺 => Installing VSCode..."
 brew install --cask visual-studio-code
 
-# This requires some time to install so keep last and is also quite flaky.
-# echo "🍺 => Arduino TinyGo Support..."
-# brew tap tinygo-org/tools
-# brew install tinygo
-# brew install avrdude
+echo "🍺 => Arduino TinyGo Support..."
+brew tap tinygo-org/tools
+brew install tinygo
+brew install avrdude
 
 echo "FINISHED!"
