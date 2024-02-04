@@ -34,6 +34,9 @@ brew install mercurial
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 echo "Delve"
 brew install delve
+echo "TinyGo"
+brew tap tinygo-org/tools
+brew install tinygo
 
 echo "=> Node Developer Tools..."
 echo "NVM"
