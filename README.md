@@ -10,7 +10,7 @@ dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 ```
 
-If you already have some of the dotfiles present, you will see this error.
+If you already have some of the dotfiles present, you will see a similar error.
 
 ```
 error: The following untracked working tree files would be overwritten by checkout:
@@ -25,8 +25,12 @@ Remove or backup any collisions and repeat the checkout.
 
 ## Setup Dev Machine
 
-To setup Mac with everything run the below script:
+### Install Homebrew
+
+[homebrew installation guide](https://brew.sh)
+
+To setup Mac with everything run the below script in your home directory:
 
 ```
-./setup-dev-machine.sh
+brew-install-packages.sh
 ```
