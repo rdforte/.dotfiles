@@ -42,6 +42,13 @@ brew install docker
 echo "🍺 => Installing VSCode..."
 brew install --cask visual-studio-code
 
+echo "🍺 => Installing Slack..."
+brew install --cask slack
+
+# image compression
+echo "🍺 => Installing GraphicsMagic..." 
+brew install graphicsmagick
+
 echo "🍺 => Arduino TinyGo Support..."
 brew tap tinygo-org/tools
 brew install tinygo
