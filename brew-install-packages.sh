@@ -49,9 +49,6 @@ brew install --cask slack
 echo "🍺 => Installing GraphicsMagic..." 
 brew install graphicsmagick
 
-echo "🍺 => Installing Obsidian..." 
-brew install --cask obsidian
-
 echo "🍺 => Arduino TinyGo Support..."
 brew tap tinygo-org/tools
 brew install tinygo
