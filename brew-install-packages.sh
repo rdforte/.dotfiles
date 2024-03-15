@@ -45,6 +45,9 @@ brew install --cask visual-studio-code
 echo "🍺 => Installing Slack..."
 brew install --cask slack
 
+echo "🍺 => Installing Notion"
+brew install --cask notion
+
 # image compression
 echo "🍺 => Installing GraphicsMagic..." 
 brew install graphicsmagick
