@@ -2,6 +2,9 @@
 
 set -e
 
+echo "🍺 => Installing Spectacle"
+brew install --cask spectacle
+
 echo "🍺 => Installing GitHub CLI..."
 brew install gh
 
