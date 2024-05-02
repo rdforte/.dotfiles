@@ -8,6 +8,9 @@ brew install --cask spectacle
 echo "🍺 => Installing GitHub CLI..."
 brew install gh
 
+echo "🍺 => Installing Hugo..."
+brew install hugo
+
 echo "🍺 => Installing Fonts..."
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
