@@ -14,17 +14,17 @@ return {
       defaults = {
         file_ignore_patterns = { "node_modules", ".git" }, -- ignore these files when searching
         -- updates ripgrep to enable search of hidden files through --hidden flag
-        vimgrep_arguments = {
-          "rg",
-          "--color=never",
-          "--no-heading",
-          "--with-filename",
-          "--line-number",
-          "--column",
-          "--smart-case",
-          "--hidden",
-          "--unrestricted",
-        },
+        -- vimgrep_arguments = {
+        --   "rg",
+        --   "--color=never",
+        --   "--no-heading",
+        --   "--with-filename",
+        --   "--line-number",
+        --   "--column",
+        --   "--smart-case",
+        --   "--hidden",
+        --   "--unrestricted",
+        -- },
         path_display = { "truncate " },
         mappings = {
           i = {
