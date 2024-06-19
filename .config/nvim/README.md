@@ -5,18 +5,21 @@
 Make sure to remove or move your current `nvim` directory in ~/.config/nvim
 
 install neovim
+
 ```
 brew install neovim
 ```
 
 there is an alias set in .zshrc for nvim so you can open a file via `nv <path>`
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
+**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 ## Install ripgrep
+
 [ripgrep repo](https://github.com/BurntSushi/ripgrep#installation) this is needed for telescope
 
 ## Install delve
+
 full featured debugging tool for Go
 
 [delve repo](https://github.com/go-delve/delve/tree/master)
@@ -37,27 +40,30 @@ First we'll fix copy/paste
 
 - On mac `pbcopy` should be builtin
 
-
 Next we need to install the following
 
-__Neovim python support__
-  
+**Neovim python support**
+
 install [pyenv](https://github.com/pyenv/pyenv)
 
-__Neovim Node support__
-  
+**Neovim Node support**
+
 install [nvm](https://github.com/nvm-sh/nvm)
 
-__Neovim Go support__
-  
+**Neovim Go support**
+
 install [gvm](https://github.com/moovweb/gvm)
 
 ## Github copilot
+
 to login to copilot
+
 ```
 :Copilot setup
 ```
+
 for more options
+
 ```
 :copilot help
 ```
@@ -65,6 +71,17 @@ for more options
 ## Common Issues
 
 #### Debug breakpoint shows letter R
+
 This usually means that the path to the current directory is incorrect ie `develper/competitive-programming` instead of `Developer/competitive-programming`.
 In this instance the case is important.
 
+#### LSP support is broken for latest language version
+
+For example: updating to Go version 1.22 broke LSP support. To fix this, you need to update the LSP server. To do this,
+run the below command:
+
+```
+:Mason
+```
+
+Then run `U` to update mason packages.
