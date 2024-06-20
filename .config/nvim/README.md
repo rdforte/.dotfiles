@@ -6,7 +6,7 @@
 
 `:Mason` for checking mason packages (LSP)
 
-`:checkhealth` for checking health of neovim
+`:checkhealth` for checking health of neovim packages and seeing what needs fixing, packages need installing.
 
 ## Getting Started
 
