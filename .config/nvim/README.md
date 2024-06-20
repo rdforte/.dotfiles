@@ -1,5 +1,13 @@
 # Ryans Neovim
 
+## Common Commands
+
+`:Lazy` for checking nvim plugins
+
+`:Mason` for checking mason packages (LSP)
+
+`:checkhealth` for checking health of neovim
+
 ## Getting Started
 
 Make sure to remove or move your current `nvim` directory in ~/.config/nvim
