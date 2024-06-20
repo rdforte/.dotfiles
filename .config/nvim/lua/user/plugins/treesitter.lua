@@ -39,6 +39,7 @@ return {
           "vim",
           "dockerfile",
           "gitignore",
+          "vimdoc",
         },
       })
     end,
