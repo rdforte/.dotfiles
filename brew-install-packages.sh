@@ -12,7 +12,7 @@ echo "🍺 => Installing Hugo..."
 brew install hugo
 
 echo "🍺 => Installing Fonts..."
-brew tap homebrew/cask-fonts
+brew alfred
 brew install --cask font-jetbrains-mono-nerd-font
 
 echo "🍺 => Installing Tmux..."
