@@ -36,3 +36,22 @@ To setup Mac with everything run the below script in your home directory:
 ```
 brew-install-packages.sh
 ```
+
+## Common Issues
+
+### Tmux Control Space not working
+
+Navigate to System Settings -> Keyboard Shortcuts -> Input Sources. Deselect all options.
+
+### GVM is not installing the go version.
+
+```
+brew install go
+gvm install go1.9
+gvm use go1.9 --default
+brew uninstall go
+```
+
+### Getting a bunch of Mason errors.
+
+Refer to the nvim README and make sure you have everything installed.
