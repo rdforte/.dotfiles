@@ -6,6 +6,8 @@ Follow the below setup. This will enable us to easily manage our dotfiles using 
 
 ```
 git clone --bare https://github.com/rdforte/.dotfiles $HOME/.dotfiles
+cd ~/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 ```
