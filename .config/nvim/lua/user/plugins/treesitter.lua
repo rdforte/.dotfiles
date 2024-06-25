@@ -40,6 +40,7 @@ return {
           "dockerfile",
           "gitignore",
           "vimdoc",
+          "proto",
         },
       })
     end,
