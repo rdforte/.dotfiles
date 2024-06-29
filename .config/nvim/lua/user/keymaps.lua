@@ -7,6 +7,7 @@
 --   command_mode = "c",
 --
 --   NOTE: Keymaps specific to the package will be found in their own file.
+--   <CR> is the same as pressing the enter key (carriage return).
 
 local keymap = vim.keymap -- for conciseness
 
@@ -56,3 +57,7 @@ keymap.set("n", "<leader><ESC>", "<cmd>noh<CR>")
 
 -- Find and replace word in file
 keymap.set("n", "<leader>fw", ":%s/\\<<C-r><C-w>\\>/", { noremap = true })
+
+-- Remamp NVIM v0.10.0 comment toggle
+keymap.set("n", "'", ":norm gcc<CR>", { remap = true })
+keymap.set("v", "'", ":norm gcc<CR>", { remap = true })
