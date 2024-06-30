@@ -8,6 +8,8 @@
 
 `:checkhealth` for checking health of neovim packages and seeing what needs fixing, packages need installing.
 
+`:so %` sources the current file changes
+
 ## Getting Started
 
 Make sure to remove or move your current `nvim` directory in ~/.config/nvim
