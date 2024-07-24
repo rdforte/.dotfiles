@@ -1,4 +1,4 @@
-# Ryans Neovim
+# GophersVi
 
 ## Common Commands
 
@@ -10,7 +10,7 @@
 
 `:so %` sources the current file changes
 
-## Getting Started
+## Setup / Getting Started
 
 Make sure to remove or move your current `nvim` directory in ~/.config/nvim
 
@@ -20,19 +20,25 @@ install neovim
 brew install neovim
 ```
 
-there is an alias set in .zshrc for nvim so you can open a file via `nv <path>`
-
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 ## Install ripgrep
 
 [ripgrep repo](https://github.com/BurntSushi/ripgrep#installation) this is needed for telescope
 
+```
+brew install ripgrep
+```
+
 ## Install delve
 
 full featured debugging tool for Go
 
 [delve repo](https://github.com/go-delve/delve/tree/master)
+
+```
+brew install delve
+```
 
 ## Get healthy
 
