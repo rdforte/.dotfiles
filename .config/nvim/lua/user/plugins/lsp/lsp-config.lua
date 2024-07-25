@@ -83,7 +83,6 @@ return {
       on_attach = on_attach,
     })
 
-
     -- configure css server
     lspconfig["cssls"].setup({
       capabilities = capabilities,
@@ -94,6 +93,11 @@ return {
     lspconfig["gopls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        gopls = {
+          gofumpt = true, -- enable gofumpt formatting over gofmt
+        },
+      },
     })
 
     -- configure lua server (with special settings)
