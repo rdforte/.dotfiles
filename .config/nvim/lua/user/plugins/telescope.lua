@@ -15,11 +15,24 @@ return {
       pickers = {
         live_grep = {
           additional_args = function()
-            return { "--hidden" } -- grep for strings in hidden files
+            return {
+              "--hidden",
+              "--glob=!**/.git/*",
+              "--glob=!**/.idea/*",
+              "--glob=!**/.vscode/*",
+            } -- grep for strings in hidden files and ignore specific directories
           end,
         },
         find_files = {
           hidden = true, -- display hidden files
+          find_command = {
+            "rg",
+            "--files",
+            "--hidden",
+            "--glob=!**/.git/*",
+            "--glob=!**/.idea/*",
+            "--glob=!**/.vscode/*",
+          }, -- find hidden files excluding specific directories
         },
       },
       defaults = {
