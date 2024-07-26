@@ -1,4 +1,8 @@
-# GophersVi
+# V.I.K.I.N.G
+
+**V**ersatile **I**DE for **K**nowledgable and **I**nteresting **N**eovim **G**ophers
+
+[viking gopher](./assets/viking-gopher.png)
 
 ## Common Commands
 
