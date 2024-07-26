@@ -2,7 +2,7 @@
 
 **V**ersatile **I**DE for **K**nowledgable and **I**nteresting **N**eovim **G**ophers
 
-![viking gopher](./assets/viking-gopher.png)
+![viking gopher](./assets/viking_gopher.png)
 
 ## Common Commands
 
