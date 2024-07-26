@@ -1,3 +1,4 @@
+-- Better syntax highlighting and indentation.
 return {
   {
     "nvim-treesitter/nvim-treesitter",

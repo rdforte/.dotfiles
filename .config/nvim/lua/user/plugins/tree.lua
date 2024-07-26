@@ -1,3 +1,4 @@
+-- Displays a file explorer for easy navigation.
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },

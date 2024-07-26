@@ -1,3 +1,4 @@
+-- Display hover information for the symbol under the cursor.
 return {
   "lewis6991/hover.nvim",
   config = function()
@@ -6,16 +7,16 @@ return {
         require("hover.provider.lsp")
       end,
       preview_opts = {
-        border = 'single'
+        border = "single",
       },
       -- Whether the contents of a currently open hover window should be moved
       -- to a :h preview-window when pressing the hover keymap.
       preview_window = false,
       title = true,
       mouse_providers = {
-        'LSP'
+        "LSP",
       },
-      mouse_delay = 1000
+      mouse_delay = 1000,
     })
 
     -- Keymaps

@@ -1,3 +1,4 @@
+-- Install and manage LSP servers.
 -- To view info :Mason this shows linters, lsp, Dap, formatters
 return {
   "williamboman/mason.nvim",
@@ -32,7 +33,7 @@ return {
         "html",
         "cssls",
         "lua_ls",
-        "gopls"
+        "gopls",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed

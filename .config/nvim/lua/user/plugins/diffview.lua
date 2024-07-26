@@ -1,3 +1,4 @@
+-- Display Git diffs in a new window.
 return {
   "sindrets/diffview.nvim",
   config = function()

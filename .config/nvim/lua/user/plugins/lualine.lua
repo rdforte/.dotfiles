@@ -1,3 +1,5 @@
+-- Displays the Line at the bottom of the screen with information such as vim mode,
+-- file encoding, file format, file type, and file name.
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -64,7 +66,7 @@ return {
           { "encoding" },
           { "fileformat" },
           {
-            'filename',
+            "filename",
             path = 1,
           },
           { "filetype" },

@@ -35,6 +35,7 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
+-- don't give |ins-completion-menu| messages
 vim.opt.shortmess:append("c")
 
 for k, v in pairs(options) do

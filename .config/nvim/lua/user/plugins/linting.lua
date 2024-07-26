@@ -1,3 +1,4 @@
+-- Needed for configuring javascript linters eslint.
 return {
   "mfussenegger/nvim-lint",
   lazy = true,

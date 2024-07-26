@@ -1,10 +1,9 @@
+-- Description: This file configures the LSP servers for the languages I use.
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
-    -- auto rename imports when change file name
-    --    { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
     -- import lspconfig plugin

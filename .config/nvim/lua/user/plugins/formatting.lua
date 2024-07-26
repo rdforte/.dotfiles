@@ -1,3 +1,4 @@
+-- Configure formatting. Not really needed for Go but helpful for json, lua, markdown, etc.
 return {
   "stevearc/conform.nvim",
   lazy = true,

@@ -1,3 +1,4 @@
+-- Fuzzy finder for files and text.
 return {
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x",
@@ -11,25 +12,23 @@ return {
     local actions = require("telescope.actions")
 
     telescope.setup({
+      pickers = {
+        live_grep = {
+          additional_args = function()
+            return { "--hidden" } -- grep for strings in hidden files
+          end,
+        },
+        find_files = {
+          hidden = true, -- display hidden files
+        },
+      },
       defaults = {
-        file_ignore_patterns = { "node_modules", ".git" }, -- ignore these files when searching
-        -- updates ripgrep to enable search of hidden files through --hidden flag
-        -- vimgrep_arguments = {
-        --   "rg",
-        --   "--color=never",
-        --   "--no-heading",
-        --   "--with-filename",
-        --   "--line-number",
-        --   "--column",
-        --   "--smart-case",
-        --   "--hidden",
-        --   "--unrestricted",
-        -- },
-        path_display = { "truncate " },
+        file_ignore_patterns = { "node_modules" }, -- ignore these files when searching
+        path_display = { "truncate" },
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-            ["<C-j>"] = actions.move_selection_next, -- move to next result
+            ["<C-j>"] = actions.move_selection_next,     -- move to next result
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
           },
         },
@@ -39,7 +38,12 @@ return {
     telescope.load_extension("fzf")
 
     -- Keymaps
-    vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+    vim.keymap.set(
+      "n",
+      "<leader>ff",
+      "<cmd>Telescope find_files<cr>",
+      { desc = "Fuzzy find files in cwd", noremap = true }
+    )
     vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
     vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
