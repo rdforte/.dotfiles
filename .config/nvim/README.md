@@ -7,6 +7,8 @@
 ![viking gopher](./assets/viking_gopher.PNG)
 
 [Common Commands](#common-commands)
+[Setup / Getting Started)(#setup--getting-started)
+[Common issues](#common-issues)
 
 ## Common Commands
 
