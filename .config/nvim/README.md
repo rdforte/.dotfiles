@@ -6,6 +6,8 @@
 
 ![viking gopher](./assets/viking_gopher.PNG)
 
+[Common Commands](#common-commands)
+
 ## Common Commands
 
 `:Lazy` for checking nvim plugins
