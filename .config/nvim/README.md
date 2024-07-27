@@ -40,6 +40,12 @@ brew install neovim
 
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
+### Fonts
+```
+brew alfred
+brew install --cask font-jetbrains-mono-nerd-font
+```
+
 ### Install ripgrep
 
 [ripgrep repo](https://github.com/BurntSushi/ripgrep#installation) this is needed for telescope
