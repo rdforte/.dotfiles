@@ -34,7 +34,7 @@ brew install neovim
 
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
-## Install ripgrep
+### Install ripgrep
 
 [ripgrep repo](https://github.com/BurntSushi/ripgrep#installation) this is needed for telescope
 
@@ -42,7 +42,7 @@ brew install neovim
 brew install ripgrep
 ```
 
-## Install delve
+### Install delve
 
 full featured debugging tool for Go
 
@@ -52,37 +52,19 @@ full featured debugging tool for Go
 brew install delve
 ```
 
-## Get healthy
-
-Open `nvim` and enter the following:
-
-```
-:checkhealth
-```
-
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
-
-So let's fix that
-
-First we'll fix copy/paste
-
-- On mac `pbcopy` should be builtin
-
-Next we need to install the following
-
-**Neovim python support**
+### Install python
 
 install [pyenv](https://github.com/pyenv/pyenv)
 
-**Neovim Node support**
+### Install node
 
 install [nvm](https://github.com/nvm-sh/nvm)
 
-**Neovim Go support**
+### Install Go
 
 install [gvm](https://github.com/moovweb/gvm)
 
-## Github copilot
+### Github copilot
 
 to login to copilot
 
