@@ -68,6 +68,10 @@ brew install delve
 
 install [pyenv](https://github.com/pyenv/pyenv)
 
+```
+brew install pyenv
+```
+
 ### Install node
 
 install [nvm](https://github.com/nvm-sh/nvm)
