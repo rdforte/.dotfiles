@@ -1,4 +1,4 @@
-# V.I.K.I.N.G
+# $\textcolor{blue}{V.\ I.\ K.\ I.\ N.\ G\}$
 
 **V**ersatile **I**DE for **K**nowledgable and **I**nteresting **N**eovim **G**ophers
 
