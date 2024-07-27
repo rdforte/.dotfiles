@@ -1,4 +1,4 @@
-# $\textcolor{blue}{V.\ I.\ K.\ I.\ N.\ G\}$
+# V.I.K.I.N.G
 
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.10-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
 
