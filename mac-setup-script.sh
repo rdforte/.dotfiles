@@ -10,6 +10,12 @@ echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 echo "🍺 => Installing GitHub CLI..."
 brew install gh
 
+echo "😼 => Installing GitHub Copilot extension..."
+gh extension install github/gh-copilot
+
+echo "😼 => Installing GitHub Copilot markdown preview..."
+gh extension install yusukebe/gh-markdown-preview
+
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
 echo "🍺 => Installing Hugo..."
 brew install hugo

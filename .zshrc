@@ -20,3 +20,11 @@ alias nv=nvim
 # alias for Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Adds the copilot alias to the shell
+# ghce - Github copilot explain
+# ghcs - Github copilot suggest
+eval "$(gh copilot alias -- zsh)"
+
+# Github Markdown preview alias
+# https://github.com/yusukebe/gh-markdown-preview
+alias mp='gh markdown-preview'
