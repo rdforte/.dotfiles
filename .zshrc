@@ -28,3 +28,5 @@ eval "$(gh copilot alias -- zsh)"
 # Github Markdown preview alias
 # https://github.com/yusukebe/gh-markdown-preview
 alias mp='gh markdown-preview'
+
+export PATH="$PATH:$(go env GOPATH)/bin"
