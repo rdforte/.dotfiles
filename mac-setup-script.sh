@@ -57,6 +57,12 @@ echo "Uninstalling go"
 brew uninstall go
 echo "Installing Delve"
 brew install delve
+echo "goimports-revised"
+brew tap incu6us/homebrew-tap
+brew install incu6us/homebrew-tap/goimports-reviser
+echo "install gofumpt"
+go install mvdan.cc/gofumpt@latest
+
 
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
 echo "🍺 => Node Developer Tools..."
