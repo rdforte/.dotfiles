@@ -18,7 +18,7 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         lua = { "stylua" },
-        go = { "gofumpt", "goimports-reviser" },
+        go = { "gofumpt", "goimports-reviser", "golines" },
       },
       format_on_save = {
         lsp_fallback = true, -- if no formatter available then fallback to using the LSP formatter

@@ -43,25 +43,27 @@ brew install ripgrep
 
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
 echo "🍺 => Go Developer Tools..."
-echo "GVM"
+echo "🍕 GVM\n\n"
 brew update
-echo "Installing Mercurial"
+echo "🍕 Installing Mercurial\n\n"
 brew install mercurial
-echo "Installing Go so we can install GVM and set go version"
+echo "🍕 Installing Go so we can install GVM and set go version\n\n"
 brew install go
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 gvm install go1.22
-echo "Setting go1.22 as default"
+echo "🍕 Setting go1.22 as default\n\n"
 gvm use go1.22 --default
-echo "Uninstalling go"
+echo "🍕 Uninstalling go\n\n"
 brew uninstall go
-echo "Installing Delve"
+echo "🍕 Installing Delve\n\n"
 brew install delve
-echo "goimports-revised"
+echo "🍕 goimports-revised\n\n"
 brew tap incu6us/homebrew-tap
 brew install incu6us/homebrew-tap/goimports-reviser
-echo "install gofumpt"
+echo "🍕 install gofumpt\n\n"
 go install mvdan.cc/gofumpt@latest
+echo "🍕 install golines\n\n"
+go install github.com/segmentio/golines@latest
 
 
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
