@@ -1,12 +1,6 @@
-# V.I.K.I.N.G
-
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.10-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
 
-VIKING (**V**ersatile **I**DE for **K**nowledgable and **I**nteresting **N**eovim **G**ophers) is a barebones all you need Neovim config for getting started with Go development. It has everything from built in fuzzy finder support using [telescope](https://github.com/nvim-telescope/telescope.nvim), LSP support using [gopls](https://github.com/golang/tools/tree/master/gopls), debugger using [delve](https://github.com/go-delve/delve) and everything else needed for day to day Go development.
-
-A lot of VIKING is built off other peoples open source projects so please take the time to visit their pages and show some love.
-
-![viking gopher](./assets/viking_gopher.PNG)
+![ngo](./assets/ngo.png)
 
 [Common Commands](#common-commands)
 
@@ -45,6 +39,7 @@ brew install neovim
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 ### Fonts
+
 ```
 brew alfred
 brew install --cask font-jetbrains-mono-nerd-font
