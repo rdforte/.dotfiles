@@ -25,14 +25,6 @@ It is quite a minimal setup with the bare essentials needed for Go development.
 
 ## Setup / Getting Started
 
-Make sure to remove or move your current `nvim` directory in ~/.config/nvim
-
-Pull the project into ~/.config/nvim
-
-```
-git clone https://github.com/rdforte/<update this> ~/.config/nvim
-```
-
 install neovim
 
 ```
