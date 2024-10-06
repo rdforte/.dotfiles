@@ -1,5 +1,10 @@
 ![ngo](assets/ngo.png)
 
+This is my personal Neovim setup that I use for Go development. It includes a bunch of plugins and configurations that I have found useful.
+It is quite a minimal setup with the bare essentials needed for Go development.
+
+[![Neovim Version](https://img.shields.io/badge/Neovim-0.5-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](
+
 [![Neovim Minimum Version](https://img.shields.io/badge/Neovim-0.10-blueviolet.svg?style=flat-square&logo=Neovim&color=90E59A&logoColor=white)](https://github.com/neovim/neovim)
 
 [Common Commands](#common-commands)
