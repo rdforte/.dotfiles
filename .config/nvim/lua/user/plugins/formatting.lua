@@ -18,22 +18,22 @@ return {
         yaml = { "prettier" },
         markdown = { "prettier" },
         lua = { "stylua" },
-        go = { "gofumpt", "goimports-reviser", "golines" },
+        go = { "gofumpt", "goimports-reviser" },
       },
       format_on_save = {
-        lsp_fallback = true, -- if no formatter available then fallback to using the LSP formatter
+        lsp_fallback = false, -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
         async = false,
-        timeout_ms = 1000,
+        timeout_ms = 2000,
       },
     })
 
     -- Keymaps mp - make pretty
-    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-      conform.format({
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 3000,
-      })
-    end, { desc = "Format file or range (in visual mode)" })
+    -- vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+    -- conform.format({
+    -- lsp_fallback = true,
+    -- async = false,
+    -- timeout_ms = 3000,
+    -- })
+    -- end, { desc = "Format file or range (in visual mode)" })
   end,
 }
