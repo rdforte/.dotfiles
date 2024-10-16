@@ -23,6 +23,8 @@ It is quite a minimal setup with the bare essentials needed for Go development.
 
 `:so %` sources the current file changes
 
+`:LspInfo` shows the status of active and configured language servers
+
 ## Setup / Getting Started
 
 install neovim
@@ -88,7 +90,15 @@ for more options
 :copilot help
 ```
 
-## Command cheat sheet
+## Language Servers
+
+**Make sure to install the language servers for the languages you are using**
+
+- [gopls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#gopls)
+- [ts_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#ts_ls)
+- [lua_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#lua_ls)
+- [cssls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#cssls)
+- [html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#html)
 
 ## Common Issues
 
