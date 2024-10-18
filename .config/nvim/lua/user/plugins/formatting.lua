@@ -21,9 +21,13 @@ return {
         go = { "gofumpt", "goimports-reviser" },
       },
       format_on_save = {
-        lsp_fallback = false, -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
+        lsp_format = "never", -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
         async = false,
         timeout_ms = 2000,
+        quiet = true, -- Don't show any notifications for warnings or failures.
+      },
+      default_format_options = {
+        lsp_format = "never", -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
       },
     })
 
