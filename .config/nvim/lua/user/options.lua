@@ -56,17 +56,17 @@ vim.cmd([[set iskeyword+=-]])
 -- this command ensures that the current buffer is automatically formatted using the LSP's formatting capabilities every time you save a file.
 -- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]]) // OLD version conflicted with SaveNoFormat function
 -- BufWritePre fires when you save the buffer but before it flushes anything to disk. This gives you a chance to manipulate the buffer first.
-vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("lsp", { clear = true }), -- create lsp group and clear commands if group already exists.
-  callback = function(args)
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = args.buf,
-      callback = function()
-        vim.lsp.buf.format({ async = false, id = args.data.client_id }) -- format before flushing to disk
-      end,
-    })
-  end,
-})
+-- vim.api.nvim_create_autocmd("LspAttach", {
+-- group = vim.api.nvim_create_augroup("lsp", { clear = true }), -- create lsp group and clear commands if group already exists.
+-- callback = function(args)
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+-- buffer = args.buf,
+-- callback = function()
+-- vim.lsp.buf.format({ async = false, id = args.data.client_id }) -- format before flushing to disk
+-- end,
+-- })
+-- end,
+-- })
 
 -- Save without formatting
 -- silent!: Suppresses all error messages. If any command in the sequence produces an error, it will not be displayed to the user.

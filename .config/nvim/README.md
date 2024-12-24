@@ -1,5 +1,3 @@
-![ngo](assets/ngo.png)
-
 This is my personal Neovim setup that I use for Go development. It includes a bunch of plugins and configurations that I have found useful.
 It is quite a minimal setup with the bare essentials needed for Go development.
 
