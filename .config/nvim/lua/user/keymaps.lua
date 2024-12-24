@@ -53,7 +53,7 @@ keymap.set("t", "<C-k>", "<C-\\><C-N><C-w>k")
 keymap.set("t", "<C-l>", "<C-\\><C-N><C-w>l")
 
 -- Exit highlight mode
-keymap.set("n", "<leader><ESC>", "<cmd>noh<CR>")
+keymap.set("n", "<ESC>", "<cmd>noh<CR>")
 
 -- Find and replace word in file
 keymap.set("n", "<leader>fw", ":%s/\\<<C-r><C-w>\\>/", { noremap = true })
