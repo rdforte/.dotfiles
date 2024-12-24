@@ -2,42 +2,37 @@
 return {
   "stevearc/conform.nvim",
   lazy = true,
-  event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
-  config = function()
-    local conform = require("conform")
-
-    conform.setup({
-      formatters_by_ft = {
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        javascriptreact = { "prettier" },
-        typescriptreact = { "prettier" },
-        css = { "prettier" },
-        html = { "prettier" },
-        json = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        lua = { "stylua" },
-        go = { "gofumpt", "goimports-reviser" },
-      },
-      format_on_save = {
-        lsp_format = "never", -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
-        async = false,
-        timeout_ms = 2000,
-        quiet = true, -- Don't show any notifications for warnings or failures.
-      },
-      default_format_options = {
-        lsp_format = "never", -- Disable LSP formatting on save, We want all formatting to be handled by Conform.
-      },
-    })
-
-    -- Keymaps mp - make pretty
-    -- vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-    -- conform.format({
-    -- lsp_fallback = true,
-    -- async = false,
-    -- timeout_ms = 3000,
-    -- })
-    -- end, { desc = "Format file or range (in visual mode)" })
-  end,
+  event = { "BufWritePre" },
+  opts = {
+    notify_on_error = false,
+    format_on_save = function(bufnr)
+      -- Disable "format_on_save lsp_fallback" for languages that don't
+      -- have a well standardized coding style. You can add additional
+      -- languages here or re-enable it for the disabled ones.
+      local disable_filetypes = { c = true, cpp = true }
+      local lsp_format_opt
+      if disable_filetypes[vim.bo[bufnr].filetype] then
+        lsp_format_opt = "never"
+      else
+        lsp_format_opt = "fallback"
+      end
+      return {
+        timeout_ms = 500,
+        lsp_format = lsp_format_opt,
+      }
+    end,
+    formatters_by_ft = {
+      javascript = { "prettier" },
+      typescript = { "prettier" },
+      javascriptreact = { "prettier" },
+      typescriptreact = { "prettier" },
+      css = { "prettier" },
+      html = { "prettier" },
+      json = { "prettier" },
+      yaml = { "prettier" },
+      markdown = { "prettier" },
+      lua = { "stylua" },
+      go = { "gofumpt", "goimports-reviser" },
+    },
+  },
 }
