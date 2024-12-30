@@ -110,6 +110,11 @@ echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 echo "🍺 => Installing Yazi..." 
 brew install yazi
 
+# lazygit
+echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
+echo "🍺 => Installing LazyGit..." 
+brew install jesseduffield/lazygit/lazygit
+
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
 echo "🍺 => Arduino TinyGo Support..."
 brew tap tinygo-org/tools
