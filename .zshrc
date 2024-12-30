@@ -30,3 +30,5 @@ eval "$(gh copilot alias -- zsh)"
 alias mp='gh markdown-preview'
 
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+export EDITOR=nvim

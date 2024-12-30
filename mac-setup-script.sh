@@ -105,6 +105,11 @@ echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 echo "🍺 => Installing GraphicsMagic..." 
 brew install graphicsmagick
 
+# yazi
+echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
+echo "🍺 => Installing Yazi..." 
+brew install yazi
+
 echo "🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩"
 echo "🍺 => Arduino TinyGo Support..."
 brew tap tinygo-org/tools
