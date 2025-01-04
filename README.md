@@ -34,8 +34,25 @@ Remove or backup any collisions and repeat the checkout.
 To setup Mac with everything run the below script in your home directory:
 
 ```
-brew-install-packages.sh
+brew bundle install
 ```
+
+To update the Brewfile run the below command:
+
+```
+brew bundle dump --force
+```
+
+### Install GitHub extensions
+
+```
+gh extension install github/gh-copilot
+gh extension install yusukebe/gh-markdown-preview
+```
+
+## Install GVM
+
+https://github.com/moovweb/gvm
 
 ## Common Issues
 
