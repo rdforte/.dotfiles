@@ -104,7 +104,7 @@ format = '[─](fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[]
 symbol = '  go'
  
 [lua]
-format = '[─](fg:current_line)[](fg:red)[$symbol](fg:primary bg:red)[](fg:red bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:purple)[$symbol](fg:primary bg:purple)[](fg:purple bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
 symbol = '  lua'
 
 [c]
