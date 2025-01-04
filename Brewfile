@@ -46,4 +46,4 @@ cask "postman"
 brew "docker"
 cask "notion"
 cask "ghostty"
-
+brew "starship"

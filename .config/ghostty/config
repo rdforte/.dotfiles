@@ -1,5 +1,5 @@
-font-family = JetBrains Mono Nerd Font
+font-family = jetBrainsMono Nerd Font 
 
-theme = catppuccin-macchiato 
+theme = catppuccin-mocha
 
-font-size = 14
+font-size = 13
