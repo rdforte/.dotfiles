@@ -37,11 +37,13 @@ To setup Mac with everything run the below script in your home directory:
 brew bundle install
 ```
 
-To update the Brewfile run the below command:
+### Install TPM (Tmux Plugin Manager)
 
-```
-brew bundle dump --force
-```
+https://github.com/tmux-plugins/tpm
+
+### Install Go Version Manager (GVM)
+
+https://github.com/moovweb/gvm
 
 ### Install GitHub extensions
 

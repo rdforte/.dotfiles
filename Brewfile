@@ -45,4 +45,5 @@ cask "font-jetbrains-mono-nerd-font"
 cask "postman"
 brew "docker"
 cask "notion"
+cask "ghostty"
 
