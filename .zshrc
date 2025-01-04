@@ -14,8 +14,10 @@ export NVM_DIR="$HOME/.nvm"
 
 [[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
 
-# Alias for NVIM
-alias nv=nvim
+# Alias for common commands
+alias v=nvim
+alias l=lazygit
+alias y=yazi
 
 # alias for Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
