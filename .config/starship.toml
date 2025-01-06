@@ -85,7 +85,7 @@ symbol = '󰎙 Node.js'
 
 [zig]
 format = '[─](fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[](fg:blue bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
-symbol = '⚡️ Zig'
+symbol = ' Zig'
 
 [rust]
 format = '[─](fg:current_line)[](fg:yellow)[$symbol](fg:primary bg:yellow)[](fg:yellow bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
