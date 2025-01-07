@@ -2,7 +2,6 @@
 
 format = """
 [╭](fg:current_line)\
-$os\
 $status\
 $directory\
 $git_branch\
