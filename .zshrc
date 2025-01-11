@@ -8,7 +8,9 @@
 # setopt PROMPT_SUBST
 # PROMPT='%F{cyan}%d%f%F{green}$(parse_git_branch)%f %F{cyan}=>%f '
 
-eval "$(starship init zsh)"
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+export EDITOR=nvim
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -19,20 +21,23 @@ export NVM_DIR="$HOME/.nvm"
 # Alias for common commands
 alias v=nvim
 alias l=lazygit
-alias y=yazi
-
-# alias for Dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-# Adds the copilot alias to the shell
-# ghce - Github copilot explain
-# ghcs - Github copilot suggest
-eval "$(gh copilot alias -- zsh)"
-
-# Github Markdown preview alias
-# https://github.com/yusukebe/gh-markdown-preview
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # alias for dotfiles
 alias mp='gh markdown-preview'
+alias cd=z # alias cd to zoxide
 
-export PATH="$PATH:$(go env GOPATH)/bin"
+eval "$(gh copilot alias -- zsh)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 
-export EDITOR=nvim
+# Yazi shell wrapper function from:
+# https://yazi-rs.github.io/docs/quick-start/#shell-wrapper
+# This function is used to change the current working directory of the shell when exit from yazi.
+# this function will also alias y to yazi.
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
