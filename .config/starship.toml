@@ -26,7 +26,7 @@ add_newline = true
 [palettes.catppuccin_mocha]
 foreground = '#D9E0EE'
 background = '#1E1E2E'
-current_line = '#2E2E3E'
+current_line = '#3C3C50'
 primary = '#313244'
 box = '#2E2E3E'
 blue = '#8AADF4'
@@ -37,7 +37,7 @@ pink = '#F5BDE6'
 purple = '#CBA6F7'
 red = '#F38BA8'
 yellow = '#F9E2AF'
-status = "#e23140"
+status = '#e23140'
 
 
 [os]
@@ -53,7 +53,7 @@ pipestatus_format = "[─](fg:current_line)[](fg:status)[](fg:primary bg:s
 disabled = false
 
 [directory]
-format = '[─](fg:current_line)[](fg:pink)[󰷏](fg:primary bg:pink)[](fg:pink bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:foreground)[󰷏](fg:primary bg:foreground)[](fg:foreground bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
 home_symbol = " ~/"
 truncation_symbol = ' '
 truncation_length = 2
@@ -79,7 +79,7 @@ diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
 behind = ' ⇣${count}'
 
 [nodejs]
-format = '[─](fg:current_line)[](fg:green)[$symbol](fg:primary bg:green)[](fg:green bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:foreground)[$symbol](fg:primary bg:foreground)[](fg:foreground bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
 symbol = '󰎙 Node.js'
 
 [zig]
@@ -99,15 +99,15 @@ format = '[─](fg:current_line)[](fg:red)[$symbol](fg:primary bg:red)[](f
 symbol = ' Java'
 
 [golang]
-format = '[─](fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[](fg:blue bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:foreground)[$symbol](fg:primary bg:foreground)[](fg:foreground bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
 symbol = ' GO'
  
 [lua]
-format = '[─](fg:current_line)[](fg:purple)[$symbol](fg:primary bg:purple)[](fg:purple bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:foreground)[$symbol](fg:primary bg:foreground)[](fg:foreground bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
 symbol = '  Lua'
 
 [c]
-format = '[─](fg:current_line)[](fg:blue)[$symbol](fg:primary bg:blue)[](fg:blue bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:current_line)[](fg:foreground)[$symbol](fg:primary bg:foreground)[](fg:foreground bg:box)[ $version](fg:foreground bg:box)[](fg:box)'
 symbol = ' C'
 
 [fill]
@@ -115,7 +115,7 @@ symbol = '─'
 style = 'fg:current_line'
 
 [username]
-format = '[─](fg:current_line)[](fg:yellow)[](fg:primary bg:yellow)[](fg:yellow bg:box)[ $user](fg:foreground bg:box)[](fg:box) '
+format = '[─](fg:current_line)[](fg:foreground)[](fg:primary bg:foreground)[](fg:foreground bg:box)[ $user](fg:foreground bg:box)[](fg:box) '
 show_always = true
 
 [character]
