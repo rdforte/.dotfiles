@@ -123,6 +123,7 @@ format = """
 [╰─$symbol](fg:current_line) """
 success_symbol = '[](fg:bold white)'
 error_symbol = '[×](fg:bold red)'
+vimcmd_symbol = '[](bold green) '
 
 [profiles]
 transient = """$character"""
