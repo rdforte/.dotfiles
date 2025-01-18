@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[╭](fg:current_line)\
+[╭](fg:yellow)\
 $status\
 $directory\
 $git_branch\
@@ -45,7 +45,7 @@ format = '(fg:current_line)[](fg:red)[ ](fg:primary bg:red)[](fg:red)'
 disabled = false
 
 [status]
-format = "[─](fg:current_line)[](fg:status)[](fg:primary bg:status)[](fg:status bg:box)[ $status](fg:foreground bg:box)[](fg:box)"
+format = "[─](fg:yellow)[](fg:status)[](fg:primary bg:status)[](fg:status bg:box)[ $status](fg:foreground bg:box)[](fg:box)"
 pipestatus = true
 pipestatus_separator = "-"
 pipestatus_segment_format = "$status"
@@ -53,7 +53,7 @@ pipestatus_format = "[─](fg:current_line)[](fg:status)[](fg:primary bg:s
 disabled = false
 
 [directory]
-format = '[─](fg:current_line)[](fg:foreground)[󰷏](fg:primary bg:foreground)[](fg:foreground bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
+format = '[─](fg:yellow)[](fg:yellow)[󰷏](fg:primary bg:yellow)[](fg:yellow bg:box)[ $read_only$truncation_symbol$path](fg:foreground bg:box)[](fg:box)'
 home_symbol = " ~/"
 truncation_symbol = ' '
 truncation_length = 2
@@ -120,10 +120,10 @@ show_always = true
 
 [character]
 format = """
-[╰─$symbol](fg:current_line) """
-success_symbol = '[](fg:bold white)'
-error_symbol = '[×](fg:bold red)'
-vimcmd_symbol = '[](bold green) '
+[╰─$symbol](fg:yellow) """
+success_symbol = '[ ](fg:bold yellow)'
+error_symbol = '[ ×](fg:bold red)'
+vimcmd_symbol = '[ ](bold green) '
 
 [profiles]
 transient = """$character"""

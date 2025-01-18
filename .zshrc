@@ -41,3 +41,7 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# fixes backspace in spaceship prompt
+# https://github.com/spaceship-prompt/spaceship-prompt/issues/91
+bindkey "^?" backward-delete-char
