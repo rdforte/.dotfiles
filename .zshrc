@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 
 [[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
 
-# Alias for common commands
+# Alias for common commands -----------------------------------------------------------------------------
 alias v=nvim
 alias l=lazygit
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # alias for dotfiles
@@ -28,6 +28,9 @@ alias cd=z # alias cd to zoxide
 eval "$(gh copilot alias -- zsh)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+
+# Yazi ---------------------------------------------------------------------------------------------------
 
 # Yazi shell wrapper function from:
 # https://yazi-rs.github.io/docs/quick-start/#shell-wrapper
@@ -42,6 +45,44 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# Starship -------------------------------------------------------------------------------------------------
+
 # fixes backspace in spaceship prompt
 # https://github.com/spaceship-prompt/spaceship-prompt/issues/91
 bindkey "^?" backward-delete-char
+
+
+# Starship command line prompt.
+# Disable for previous executions and only show
+# for current command.
+zle-line-init() {
+  emulate -L zsh
+
+  [[ $CONTEXT == start ]] || return 0
+
+  while true; do
+    zle .recursive-edit
+    local -i ret=$?
+    [[ $ret == 0 && $KEYS == $'\4' ]] || break
+    [[ -o ignore_eof ]] || exit 0
+  done
+
+  local saved_prompt=$PROMPT
+  local saved_rprompt=$RPROMPT
+
+  # Set prompt value from character module
+  PROMPT=$(starship module character)
+  RPROMPT=''
+  zle .reset-prompt
+  PROMPT=$saved_prompt
+  RPROMPT=$saved_rprompt
+
+  if (( ret )); then
+    zle .send-break
+  else
+    zle .accept-line
+  fi
+  return ret
+}
+
+zle -N zle-line-init

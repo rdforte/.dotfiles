@@ -7,15 +7,6 @@ $directory\
 $git_branch\
 $git_status\
 $fill\
-$golang\
-$lua\
-$nodejs\
-$python\
-$java\
-$zig\
-$rust\
-$c\
-$username\
 $line_break\
 $character\
 """
