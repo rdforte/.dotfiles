@@ -1,5 +1,5 @@
 add_newline = false
-format = """$directory $git_branch $character"""
+format = """$directory$git_branch$character"""
 palette = "catppuccin_mocha"
 command_timeout = 1000
 
@@ -9,7 +9,7 @@ error_symbol = '[×](fg:bold red)'
 vimcmd_symbol = '[](bold green) '
 
 [git_branch]
-format =  '[$symbol$branch(:$remote_branch)]($style)'
+format =  '[$symbol$branch(:$remote_branch)]($style) '
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
