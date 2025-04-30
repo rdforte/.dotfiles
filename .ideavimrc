@@ -1,0 +1,78 @@
+sethandler <C-B> a:vim
+sethandler <C-F> a:vim
+sethandler <C-J> a:vim
+sethandler <C-K> a:vim
+sethandler <C-L> a:vim
+sethandler <C-N> a:vim
+sethandler <C-P> a:vim
+sethandler <C-R> a:vim
+sethandler <C-V> a:vim
+sethandler <C-W> a:vim
+sethandler <C-^> a:vim
+
+"====================================================================
+" Leader key
+"====================================================================
+" Remap the leader key.
+ let g:mapleader = "\<space>"
+"let g:mapleader = ";"
+
+"====================================================================
+" Sane editor settings
+"====================================================================
+set novisualbell
+set noerrorbells
+
+"====================================================================
+" Behavior
+"====================================================================
+" Shorten from default 2 seconds.
+set timeoutlen=1000
+
+" Use jj to esc in insert mode.
+"inoremap jj <esc>
+
+" Highlight matches when searching.
+" Use <esc><esc> to clear.
+set hlsearch
+" Redraw screan and clear search highlighted items.
+" http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting#answer-25569434
+" nnoremap <silent> <c-L> :nohlsearch<cr><c-L>
+nnoremap <silent> <esc><esc> :nohlsearch<cr><c-L>
+
+" Forward and back.
+"nnoremap J <c-f>
+"nnoremap K <c-b>
+
+" H and L move the cursor to top and bottom of the screen, but
+" the following scrolls the buffer contents so that the line under
+" the cursor is shifted to the top, middle, or bottom.
+nnoremap T zt
+nnoremap M zz
+nnoremap B zb
+
+
+"====================================================================
+" Buffers
+"====================================================================
+ "Go to next buffer.
+"nnoremap <silent> <leader>n :bn<cr>
+"inoremap <silent> <leader>n <esc>:bn<cr>
+
+ "Go to previous buffer.
+"nnoremap <silent> <leader>p :bp<cr>
+"inoremap <silent> <leader>p <esc>:bp<cr>
+" Go to next buffer (Shift-L).
+nnoremap <silent> L :bn<cr>
+inoremap <silent> L <esc>:bn<cr>
+
+" Go to previous buffer (Shift-H).
+nnoremap <silent> H :bp<cr>
+inoremap <silent> H <esc>:bp<cr>
+
+" Toggle buffer (switch between current and last buffer).
+nnoremap <silent> <leader>bb <C-^>
+
+" Close buffer.
+nnoremap <silent> <leader>d :bd<cr>
+inoremap <silent> <leader>d <esc>:bd<cr>
