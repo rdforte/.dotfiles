@@ -1,3 +1,32 @@
+"====================================================================
+" Sane editor settings
+"====================================================================
+set scrolloff=10
+set linenumber
+set showmode
+set showcmd
+set visualbell
+set noerrorbells
+set clipboard+=unnamed
+"====================================================================
+" Leader key
+"====================================================================
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+"====================================================================
+" Plugins
+"====================================================================
+set surround
+set highlightedyank
+set nerdtree
+"====================================================================
+" Behavior
+"====================================================================
+" Shorten from default 2 seconds.
+set timeoutlen=1000
+
 sethandler <C-B> a:vim
 sethandler <C-F> a:vim
 sethandler <C-J> a:vim
@@ -15,53 +44,22 @@ sethandler <C-^> a:vim
 "====================================================================
 " Remap the leader key.
  let g:mapleader = "\<space>"
-"let g:mapleader = ";"
 
-"====================================================================
-" Sane editor settings
-"====================================================================
-set novisualbell
-set noerrorbells
-
-"====================================================================
-" Behavior
-"====================================================================
-" Shorten from default 2 seconds.
-set timeoutlen=1000
 
 " Use jj to esc in insert mode.
 "inoremap jj <esc>
 
 " Highlight matches when searching.
 " Use <esc><esc> to clear.
-set hlsearch
+"set hlsearch
 " Redraw screan and clear search highlighted items.
 " http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting#answer-25569434
 " nnoremap <silent> <c-L> :nohlsearch<cr><c-L>
 nnoremap <silent> <esc><esc> :nohlsearch<cr><c-L>
 
-" Forward and back.
-"nnoremap J <c-f>
-"nnoremap K <c-b>
-
-" H and L move the cursor to top and bottom of the screen, but
-" the following scrolls the buffer contents so that the line under
-" the cursor is shifted to the top, middle, or bottom.
-nnoremap T zt
-nnoremap M zz
-nnoremap B zb
-
-
 "====================================================================
 " Buffers
 "====================================================================
- "Go to next buffer.
-"nnoremap <silent> <leader>n :bn<cr>
-"inoremap <silent> <leader>n <esc>:bn<cr>
-
- "Go to previous buffer.
-"nnoremap <silent> <leader>p :bp<cr>
-"inoremap <silent> <leader>p <esc>:bp<cr>
 " Go to next buffer (Shift-L).
 nnoremap <silent> L :bn<cr>
 inoremap <silent> L <esc>:bn<cr>
@@ -70,9 +68,38 @@ inoremap <silent> L <esc>:bn<cr>
 nnoremap <silent> H :bp<cr>
 inoremap <silent> H <esc>:bp<cr>
 
-" Toggle buffer (switch between current and last buffer).
-nnoremap <silent> <leader>bb <C-^>
-
 " Close buffer.
-nnoremap <silent> <leader>d :bd<cr>
-inoremap <silent> <leader>d <esc>:bd<cr>
+nnoremap <silent> D :bd<cr>
+inoremap <silent> D <esc>:bd<cr>
+
+"====================================================================
+" Commands
+"====================================================================
+" Comment lines
+map <leader>' <action>(CommentByLineComment)
+
+" Open NERDTree (use q to exit)
+map <leader>e :NERDTreeToggle<CR>
+
+" Actions
+map <leader>am <action>(ShowIntentionActions)
+map <leader>as <action>(SearchEverywhere)
+
+" File navigation
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fc <action>(FindInPath)
+map <leader><leader> <Action>(RecentFiles)
+map <leader>fl <action>(RecentLocations)
+map <leader>fs <action>(NewScratchFile)
+
+
+" Go to code
+nmap gd <Action>(GotoDeclaration)
+nmap gy <Action>(GotoTypeDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap gu <Action>(ShowUsages)
+nmap gt <Action>(GotoTest)
+nmap gf <Action>(Back)
+nmap gb <Action>(Forward)
+
