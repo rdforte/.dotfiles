@@ -27,35 +27,13 @@ set nerdtree
 " Shorten from default 2 seconds.
 set timeoutlen=1000
 
-sethandler <C-B> a:vim
-sethandler <C-F> a:vim
-sethandler <C-J> a:vim
-sethandler <C-K> a:vim
-sethandler <C-L> a:vim
-sethandler <C-N> a:vim
-sethandler <C-P> a:vim
-sethandler <C-R> a:vim
-sethandler <C-V> a:vim
-sethandler <C-W> a:vim
-sethandler <C-^> a:vim
-
 "====================================================================
 " Leader key
 "====================================================================
 " Remap the leader key.
  let g:mapleader = "\<space>"
 
-
-" Use jj to esc in insert mode.
-"inoremap jj <esc>
-
-" Highlight matches when searching.
-" Use <esc><esc> to clear.
-"set hlsearch
-" Redraw screan and clear search highlighted items.
-" http://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting#answer-25569434
-" nnoremap <silent> <c-L> :nohlsearch<cr><c-L>
-nnoremap <silent> <esc><esc> :nohlsearch<cr><c-L>
+nnoremap <silent> <esc> :nohlsearch<cr><c-L>
 
 "====================================================================
 " Buffers
@@ -76,23 +54,18 @@ inoremap <silent> D <esc>:bd<cr>
 " Commands
 "====================================================================
 " Comment lines
-map <leader>' <action>(CommentByLineComment)
+map ' <action>(CommentByLineComment)
 
 " Open NERDTree (use q to exit)
-map <leader>e :NERDTreeToggle<CR>
+map <leader>e :NERDTreeFocus<CR>
 
 " Actions
 map <leader>am <action>(ShowIntentionActions)
 map <leader>as <action>(SearchEverywhere)
 
 " File navigation
-map <leader>ff <action>(GotoFile)
-map <leader>fr <action>(RecentFiles)
-map <leader>fc <action>(FindInPath)
-map <leader><leader> <Action>(RecentFiles)
-map <leader>fl <action>(RecentLocations)
-map <leader>fs <action>(NewScratchFile)
-
+map <leader>f <action>(SearchEverywhere)
+map <leader>h <action>(ShowHoverInfo)
 
 " Go to code
 nmap gd <Action>(GotoDeclaration)
@@ -103,3 +76,14 @@ nmap gt <Action>(GotoTest)
 nmap gf <Action>(Back)
 nmap gb <Action>(Forward)
 
+" window navigation when vsplit
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
+" debugging
+nnoremap <leader>dc :action Debug<CR>
+nnoremap <leader>ds :action Stop<CR>
+nnoremap <leader>db :action ToggleLineBreakpoint<CR>
+nnoremap <leader>dn :action StepOver<CR>
+nnoremap <leader>di :action StepInto<CR>
+nnoremap <leader>do :action StepOut<CR>
