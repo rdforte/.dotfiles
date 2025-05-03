@@ -50,3 +50,8 @@ function y() {
 # fixes backspace in spaceship prompt
 # https://github.com/spaceship-prompt/spaceship-prompt/issues/91
 bindkey "^?" backward-delete-char
+
+# Pyenv ----------------------------------------------------------------------------------------------------
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
