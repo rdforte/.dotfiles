@@ -91,3 +91,7 @@ nnoremap <leader>do :action StepOut<CR>
 " Errors
 nnoremap [d :action GotoNextError<CR>
 nnoremap ]d :action GotoPreviousError<CR>
+
+
+nmap <leader>H <C-w>s
+nmap <leader>V <C-w>v
