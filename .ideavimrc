@@ -87,3 +87,7 @@ nnoremap <leader>db :action ToggleLineBreakpoint<CR>
 nnoremap <leader>dn :action StepOver<CR>
 nnoremap <leader>di :action StepInto<CR>
 nnoremap <leader>do :action StepOut<CR>
+
+" Errors
+nnoremap [d :action GotoNextError<CR>
+nnoremap ]d :action GotoPreviousError<CR>
