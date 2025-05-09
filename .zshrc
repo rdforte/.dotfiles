@@ -45,6 +45,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# .SDKMan --------------------------------------------------------------------------------------------------
+export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+
 # Starship -------------------------------------------------------------------------------------------------
 
 # fixes backspace in spaceship prompt
@@ -57,4 +61,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 # .Net -----------------------------------------------------------------------------------------------------
-export PATH="$PATH:/Users/ryan.forte/.dotnet/tools
+export PATH="$PATH:/Users/ryan.forte/.dotnet/tools"
