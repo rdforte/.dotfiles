@@ -40,15 +40,15 @@ nnoremap <silent> <esc> :nohlsearch<cr><c-L>
 "====================================================================
 " Go to next buffer (Shift-L).
 nnoremap <silent> L :bn<cr>
-inoremap <silent> L <esc>:bn<cr>
+"inoremap <silent> L <esc>:bn<cr>
 
 " Go to previous buffer (Shift-H).
 nnoremap <silent> H :bp<cr>
-inoremap <silent> H <esc>:bp<cr>
+"inoremap <silent> H <esc>:bp<cr>
 
 " Close buffer.
 nnoremap <silent> D :bd<cr>
-inoremap <silent> D <esc>:bd<cr>
+"inoremap <silent> D <esc>:bd<cr>
 
 "====================================================================
 " Commands
