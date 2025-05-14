@@ -81,7 +81,7 @@ nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 
 " debugging
-nnoremap <leader>dc :action Debug<CR>
+nnoremap <leader>dc :action Resume<CR>
 nnoremap <leader>ds :action Stop<CR>
 nnoremap <leader>db :action ToggleLineBreakpoint<CR>
 nnoremap <leader>dn :action StepOver<CR>
