@@ -57,7 +57,7 @@ nnoremap <silent> D :bd<cr>
 map ' <action>(CommentByLineComment)
 
 " Open NERDTree (use q to exit)
-map <leader>e :NERDTreeFocus<CR>
+"map <leader>e :NERDTreeFocus<CR>
 
 " Actions
 map <leader>am <action>(ShowIntentionActions)
@@ -91,6 +91,8 @@ nnoremap <leader>do :action StepOut<CR>
 " Errors
 nnoremap [d :action GotoNextError<CR>
 nnoremap ]d :action GotoPreviousError<CR>
+" need to be on the error/warning squigly for this to work
+nnoremap <leader>e :action ShowErrorDescription<CR>
 
 
 nmap <leader>H <C-w>s
