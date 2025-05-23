@@ -92,7 +92,7 @@ nnoremap <leader>do :action StepOut<CR>
 nnoremap [d :action GotoNextError<CR>
 nnoremap ]d :action GotoPreviousError<CR>
 " need to be on the error/warning squigly for this to work
-nnoremap <leader>e :action ShowErrorDescription<CR>
+nnoremap E :action ShowErrorDescription<CR>
 
 
 nmap <leader>H <C-w>s
