@@ -76,7 +76,7 @@ return {
           vim.diagnostic.open_float(0, { scope = "line", border = "single" })
         end
 
-        map("<leader>dl", openDiagnostics, "Type [D]iagnostics [L]ine")
+        map("E", openDiagnostics, "Type [D]iagnostics [L]ine")
 
         -- Fuzzy find all the symbols in your current document.
         --  Symbols are things like variables, functions, types, etc.
