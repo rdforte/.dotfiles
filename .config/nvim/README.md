@@ -115,3 +115,31 @@ run the below command:
 ```
 
 Then run `U` to update mason packages.
+
+## Vim commands for remapping keys
+
+Here are the main Vim commands for remapping keys:
+
+map – Map keys in all modes (recursive)
+nmap – Map keys in normal mode (recursive)
+vmap – Map keys in visual mode (recursive)
+imap – Map keys in insert mode (recursive)
+cmap – Map keys in command-line mode (recursive)
+omap – Map keys in operator-pending mode (recursive)
+smap – Map keys in select mode (recursive)
+
+For non-recursive mappings, add nore:
+
+noremap – Non-recursive map in all modes
+nnoremap – Non-recursive map in normal mode
+vnoremap – Non-recursive map in visual mode
+inoremap – Non-recursive map in insert mode
+cnoremap – Non-recursive map in command-line mode
+onoremap – Non-recursive map in operator-pending mode
+snoremap – Non-recursive map in select mode
+There are also:
+
+xmap / xnoremap – Visual and select mode
+lmap / lnoremap – Insert, command-line, lang-arg modes
+
+Use the appropriate command based on the mode and whether you want recursion.
